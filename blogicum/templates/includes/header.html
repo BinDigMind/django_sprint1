@@ -1,7 +1,6 @@
 {% load static %}
 {% with request.resolver_match.view_name as view_name %}
-<header>
-  <div class="container py-5">
+  <header>
     <nav class="navbar navbar-light" style="background-color: lightskyblue">
       <a class="navbar-brand" href="{% url 'blog:index' %}">
         <img src="{% static 'img/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -27,7 +26,6 @@
           </a>
         </li>
       </ul>
-  </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 {% endwith %}
